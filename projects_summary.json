@@ -1,0 +1,59 @@
+{
+  "total_projects": 10,
+  "completed_projects": 10,
+  "average_rating": 4.6,
+  "project_types": {
+    "Home Relocation": 4,
+    "Office Relocation": 2,
+    "Commercial Shifting": 2,
+    "Packing Services": 1,
+    "Others": 1
+  },
+  "recent_projects": [
+    {
+      "Project_ID": "P006",
+      "Project_Type": "Office Relocation",
+      "Location_From": "Delhi",
+      "Location_To": "Chennai",
+      "Date_Completed": "2024-06-18",
+      "Customer_Rating": 5,
+      "Status": "Completed"
+    },
+    {
+      "Project_ID": "P007",
+      "Project_Type": "Home Relocation",
+      "Location_From": "Chennai",
+      "Location_To": "Trichy",
+      "Date_Completed": "2024-07-25",
+      "Customer_Rating": 4,
+      "Status": "Completed"
+    },
+    {
+      "Project_ID": "P008",
+      "Project_Type": "Commercial Shifting",
+      "Location_From": "Hyderabad",
+      "Location_To": "Chennai",
+      "Date_Completed": "2024-08-30",
+      "Customer_Rating": 5,
+      "Status": "Completed"
+    },
+    {
+      "Project_ID": "P009",
+      "Project_Type": "Others",
+      "Location_From": "Chennai",
+      "Location_To": "Salem",
+      "Date_Completed": "2024-09-15",
+      "Customer_Rating": 4,
+      "Status": "Completed"
+    },
+    {
+      "Project_ID": "P010",
+      "Project_Type": "Home Relocation",
+      "Location_From": "Pune",
+      "Location_To": "Chennai",
+      "Date_Completed": "2024-10-20",
+      "Customer_Rating": 5,
+      "Status": "Completed"
+    }
+  ]
+}
