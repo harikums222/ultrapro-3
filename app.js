@@ -29,6 +29,7 @@ class UltraProWebsite {
         this.initScrollAnimations();
         this.initStatCounters();
         this.displayProjectStats();
+        this.initGalleryImages();
     }
 
     setupEventListeners() {
@@ -786,6 +787,35 @@ ${data.message ? `💬 <b>Additional Requirements:</b>\n${data.message}` : ''}
             }
         }
     }
+
+    initGalleryImages() {
+    const galleryItems = document.querySelectorAll('.gallery__item');
+    galleryItems.forEach(item => {
+        const imgFile = item.getAttribute('data-image');
+        if (imgFile) {
+            // Create img element
+            const img = document.createElement('img');
+            img.src = `images/gallery/${imgFile}`;
+            img.alt = item.querySelector('.gallery__caption')?.textContent || 'Gallery image';
+            img.classList.add('gallery__img');
+
+            // Insert before placeholder so placeholder is only fallback
+            item.insertBefore(img, item.firstChild);
+
+            // Hide placeholder if image loads
+            img.onload = () => {
+                const placeholder = item.querySelector('.gallery__placeholder');
+                if (placeholder) placeholder.style.display = 'none';
+            };
+
+            // Keep placeholder if image fails
+            img.onerror = () => {
+                console.warn(`Image not found: ${img.src}`);
+            };
+        }
+    });
+}
+
 
     // Complete Setup Instructions
     logSetupInstructions() {
