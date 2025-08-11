@@ -1792,4 +1792,12 @@ select.form-control {
   }
 }
 
+.gallery__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+
 
