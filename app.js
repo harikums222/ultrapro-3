@@ -29,7 +29,7 @@ class UltraProWebsite {
         this.initScrollAnimations();
         this.initStatCounters();
         this.displayProjectStats();
-        this.initGalleryImages();
+       /* this.initGalleryImages(); */
     }
 
     setupEventListeners() {
